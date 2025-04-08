@@ -1,0 +1,399 @@
+/*全てのタグに適用*/
+*{
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+
+/*ヘッダー*/
+.header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.header-logo{
+    width: 200px;
+    margin: 20px 20px;
+}
+
+.header-logo:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    text-align: center;
+}
+
+.contents{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.contents:hover{
+    color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.free-counseling1{
+    font-size: 11px;
+    color: white;
+    margin-right: 30px;
+    padding: 12px 20px;
+    text-decoration: none;
+    background: #F79314;
+    border-radius: 20px;
+}
+
+.free-counseling1:hover{
+    background-color: rgba(247, 147, 20, 0.7);
+    transition: 0.3s;
+}
+
+/*メインコンテンツの設定*/
+main{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 670px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+}
+
+    /*背景画像群*/
+    .images1{
+        position: relative;
+        top: -80px;
+        width: 100%;
+    }
+
+        .left-rectangle{
+            position: absolute;
+            top: 0px;
+        }
+
+        .fill-rectangle{
+            position: absolute;
+            top: 150px;
+            left: -60px;
+        }
+
+        .main-visual{
+            width: 768px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .right-rectangle{
+            position: absolute;
+            top: 400px; 
+            right: 0px;
+        }
+
+    /*フロント群*/
+    .fronts{
+        width: 100%;
+        height: 450px;
+        padding: 0;
+        position: relative;
+        top: 160px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+        .AI-text{
+            top: 80px;
+            font-size: 40px;
+        }
+
+        .free-counseling2{
+            width: 450px;
+            text-align: center;
+     
+            color: white;
+            margin-top: 0px;
+            margin-right: 30px;
+            padding: 20px 20px;
+            text-decoration: none;
+            background: #F79314;
+            border-radius: 40px;
+        }
+
+        .free-counseling2:hover{
+            background-color: rgba(247, 147, 20, 0.8);
+            transition: 0.3s;
+        }
+
+        .remark{
+            font-size: 12px;
+        }
+
+        .badge{
+            position: absolute;
+            top: -80px;
+            left: 420px;
+        }
+
+    /*fixed画像*/
+    .subsidy{
+        width: 400px;
+        position: fixed;
+        bottom: 2%;
+        right: 1.5%;
+    }
+
+/*全体設定*/
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/*メディアクエリ*/
+@media only screen and (max-width: 430px){
+
+    main{
+        height: 100%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .header-logo{
+        width: 150px;
+        margin: 20px 20px;
+    }
+
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        margin-right: 30px;
+        width: 25px;
+        cursor: pointer;
+    }
+    
+    .hamburger-line{
+        width: 100%;
+        height: 2px;
+        background-color: rgb(123, 123, 123);
+    }
+
+    .images1{
+        display: none;
+    }
+
+    .whole-visual{
+        padding: 18vh 0;
+        max-width: 100%;
+        background-image: url(images/whole-visual.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /*
+        padding: 25vh 0;
+        max-width: 100%;
+        min-width: 400px;
+        */
+    }
+
+    .fronts{
+        width: 100%;
+        padding-left: 4%;
+        position: relative;
+        top: -10px;
+    }
+    
+    .badge{
+        width: 100px;
+        position: absolute;
+        top: -10px;
+        left: 250px;
+    }
+    
+    .AI-text{
+        top: 10px;
+        left: 20px;
+        font-size: 22px;
+    }
+    .free-counseling2{
+        left: 20px;
+        width: 90%;
+        /*font-size: 70%;*/
+        text-align: center;
+    }
+
+    .free-counseling2:hover{
+        background-color: rgba(247, 147, 20, 0.8);
+        transition: 0.3s;
+    }
+    
+    .remark{
+        left: 20px;
+        font-size: 12px;
+    }
+
+    .subsidy{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        position: fixed;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 767px){
+    .menu{
+        display: none;
+    }
+
+    .header-logo{
+        width: 150px;
+        margin: 20px 20px;
+    }
+
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        margin-right: 30px;
+        width: 25px;
+        cursor: pointer;
+    }
+    
+    .hamburger-line{
+        width: 100%;
+        height: 2px;
+        background-color: rgb(123, 123, 123);
+    }
+
+    .images1{
+        display: none;
+    }
+
+    .whole-visual{
+        padding: 18vh 0;
+        max-width: 100%;
+        background-image: url(images/whole-visual.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /*
+        padding: 25vh 0;
+        max-width: 100%;
+        min-width: 400px;
+        */
+    }
+
+    .fronts{
+        width: 100%;
+        position: relative;
+        top: -20px;
+    }
+    
+    .badge{
+        width: 100px;
+        position: absolute;
+        top: 0;
+        left: 250px;
+    }
+    
+    .AI-text{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 22px;
+    }
+    
+    .free-counseling2{
+        position: absolute;
+        top: 140px;
+        left: 20px;
+        width: min(90%, 450px);
+        text-align: center;
+    
+        color: white;
+        margin-right: 30px;
+        padding: 20px 20px;
+        text-decoration: none;
+        background: #F79314;
+        border-radius: 40px;
+    }
+    
+    .free-counseling2:hover{
+        background-color: rgba(247, 147, 20, 0.8);
+        transition: 0.3s;
+    }
+    
+    .remark{
+        position: absolute;
+        top: 210px;
+        left: 20px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px){
+    .menu{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        margin-right: 30px;
+        width: 25px;
+        cursor: pointer;
+    }
+    
+    .hamburger-line{
+        width: 100%;
+        height: 2px;
+        background-color: rgb(123, 123, 123);
+    }
+
+    .whole-visual{
+       display: none;
+    }
+
+    .fronts{
+        width:737px;
+        left: 30px;
+    }
+}
+
+@media only screen and (min-width: 1101px){
+    .hamburger-menu{
+        display: none;
+    }
+    
+    .hamburger-line{
+        display: none;
+    }
+
+    .whole-visual{
+        display: none;
+     } 
+
+    .fronts{
+        width: 1040px;
+        margin: 0 auto;
+    }
+}
+
