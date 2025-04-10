@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*全てのタグに適用*/
 *{
     box-sizing: border-box;
@@ -156,6 +157,7 @@ body{
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: sans-serif;
 }
 
 /*メディアクエリ*/
@@ -198,7 +200,7 @@ body{
     .whole-visual{
         padding: 18vh 0;
         max-width: 100%;
-        background-image: url(images/whole-visual.webp);
+        background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/whole-visual.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -287,7 +289,7 @@ body{
     .whole-visual{
         padding: 18vh 0;
         max-width: 100%;
-        background-image: url(images/whole-visual.webp);
+        background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/whole-visual.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
